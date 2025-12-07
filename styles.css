@@ -1,0 +1,241 @@
+/* ------------------------------
+   GLOBAL – Premium Warm Navy
+--------------------------------*/
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background: #0e121a;
+    color: #e4e8f0;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    padding-bottom: 80px;
+
+    animation: neuralSpark 1.2s ease-out;
+}
+
+@keyframes neuralSpark {
+    0% {
+        opacity: 0;
+        filter: brightness(0.4) blur(4px);
+    }
+    25% {
+        opacity: 1;
+        filter: brightness(1.6) blur(0);
+    }
+    60% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+/* Section rise animation */
+section,
+header,
+footer {
+    animation: softRise 0.9s ease forwards;
+    opacity: 0;
+}
+
+@keyframes softRise {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 42px;
+    background: rgba(18, 22, 32, 0.7);
+    backdrop-filter: blur(14px);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    z-index: 100;
+}
+
+.logo {
+    height: 48px;
+    width: 48px;
+    border-radius: 12px;
+    box-shadow:
+        0 0 6px rgba(0, 120, 255, 0.5),
+        0 0 14px rgba(0, 120, 255, 0.25);
+
+    animation: logoPulse 2.4s ease-out forwards;
+}
+
+@keyframes logoPulse {
+    0% {
+        opacity: 0;
+        transform: scale(0.94);
+        filter: brightness(0.5);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1.02);
+        filter: brightness(1.3);
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   LANGUAGE SWITCH
+--------------------------------*/
+.lang-switch {
+    display: flex;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+}
+
+.lang-switch span {
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: #bfc5d2;
+    font-size: 0.9rem;
+    transition: 0.25s ease;
+}
+
+.lang-switch span:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.lang-switch .active {
+    background: #4e89ff;
+    color: #fff;
+}
+
+/* ------------------------------
+   HERO
+--------------------------------*/
+.hero {
+    max-width: 880px;
+    margin: 80px auto 60px;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.hero h1,
+.hero p,
+.cta-btn {
+    animation: textReveal 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes textReveal {
+    0% { opacity: 0; transform: translateY(8px); }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #cbd2df;
+    max-width: 680px;
+    margin: 0 auto 36px;
+}
+
+/* Button */
+.cta-btn {
+    background: linear-gradient(135deg, #5c8bff, #3f6ce7);
+    padding: 16px 32px;
+    border-radius: 14px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 16px rgba(85, 125, 255, 0.25);
+}
+
+.cta-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(85, 125, 255, 0.4);
+}
+
+/* ------------------------------
+   BLOCKS
+--------------------------------*/
+.privacy-block {
+    max-width: 880px;
+    margin: 60px auto;
+    padding: 36px 32px;
+    background: #171d27;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.privacy-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.privacy-block p {
+    color: #bac2d1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.footer {
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 40px 20px;
+    text-align: center;
+    color: #8f9bb4;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer a:hover {
+    color: #73c6ff;
+    text-decoration: underline;
+}
+
+div a {
+    margin: 0 4px;
+}
