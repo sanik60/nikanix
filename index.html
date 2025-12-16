@@ -1,107 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nikanix builds customized AI agents, smart automation, and intelligent robotic solutions tailored for real-world efficiency and data privacy."
+    />
+    <meta
+      name="keywords"
+      content="AI agents, custom AI, automation, robotics, Azure AI, RAG, Munich AI company"
+    />
+    <title>Nikanix | Tailored AI Agents & Robotic Innovations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikanix</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header-left">
-            <img src="nikanix_logo.png" class="logo" alt="Nikanix Logo">
-            <span class="brand">NIKANIX</span>
-        </div>
+      <div class="header-left">
+        <img src="nikanix_logo.png" class="logo" alt="Nikanix Logo" />
+        <span class="brand">NIKANIX</span>
+      </div>
 
-        <div class="lang-switch">
-            <span class="active" onclick="switchLang('en')">EN</span>
-            <span onclick="switchLang('de')">DE</span>
-        </div>
+      <div class="lang-switch">
+        <span class="active" onclick="switchLang('en')">EN</span>
+        <span onclick="switchLang('de')">DE</span>
+      </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-        <h1>Tailored AI Agents and Robotic Innovations</h1>
-        <p>
-            At Nikanix, we build customized AI agents, smart automation systems, and intelligent
-            solutions — crafted precisely for your real-world needs.
-        </p>
-        <button class="cta-btn">Discover Our Solutions</button>
+      <h1>Tailored AI Agents and Robotic Innovations</h1>
+      <p>
+        At Nikanix, we build customized AI agents, smart automation systems, and
+        intelligent solutions — crafted precisely for your real-world needs.
+      </p>
+      <button
+        class="cta-btn"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})"
+      >
+        Discover Our Solutions
+      </button>
     </section>
 
     <!-- VALUE SECTION -->
-    <section class="privacy-block">
-        <h2>Smarter Workflows. Lower Costs. Full Control.</h2>
-        <p>
-            Our mission is simple: help you work smarter, reduce costs, save valuable time,
-            and reach greater precision — all while keeping your data safely inside your
-            trusted environment.
-            <br><br>
-            Nikanix AI runs directly within your systems, ensuring your information stays private,
-            secure, and under your exclusive control.
-            <br><br>
-            We also use AI-driven agents internally to build and deliver our own technologies —
-            reinforcing our commitment to practical innovation and real-world performance.
-        </p>
+    <section class="privacy-block" style="animation-delay: 0.3s">
+      <h2>Smarter Workflows. Lower Costs. Full Control.</h2>
+      <p>
+        Our mission is simple: help you work smarter, reduce costs, save
+        valuable time, and reach greater precision — all while keeping your data
+        safely inside your trusted environment.
+        <br /><br />
+        Nikanix AI runs directly within your systems, ensuring your information
+        stays private, secure, and under your exclusive control.
+        <br /><br />
+        We also use AI-driven agents internally to build and deliver our own
+        technologies — reinforcing our commitment to practical innovation and
+        real-world performance.
+      </p>
     </section>
 
     <!-- FEATURES -->
-    <section class="privacy-block"
-        style="background: linear-gradient(to bottom, #122038, #0e1627); padding-top: 60px; padding-bottom: 60px;">
-        <h2>With Nikanix, Intelligence Becomes Your Competitive Edge</h2>
-        <p style="max-width: 700px; margin: 20px auto;">
-            ✔️ Customized AI Agents & Intelligent Systems<br>
-            ✔️ AI-Driven Automation for Homes and Businesses<br>
-            ✔️ Smart Sensor and Automation Networks<br>
-            ✔️ Intelligent Monitoring and Control Systems<br>
-            ✔️ AI Innovation & Development
-        </p>
+    <section
+      id="features"
+      class="privacy-block"
+      style="
+        background: linear-gradient(to bottom, #122038, #0e1627);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        animation-delay: 0.6s;
+      "
+    >
+      <h2>With Nikanix, Intelligence Becomes Your Competitive Edge</h2>
+      <p style="max-width: 700px; margin: 20px auto">
+        ✔️ Customized AI Agents & Intelligent Systems<br />
+        ✔️ AI-Driven Automation for Homes and Businesses<br />
+        ✔️ Smart Sensor and Automation Networks<br />
+        ✔️ Intelligent Monitoring and Control Systems<br />
+        ✔️ AI Innovation & Development
+      </p>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-grid">
+    <footer class="footer" style="animation-delay: 0.9s">
+      <div class="footer-grid">
+        <div>
+          <h3>Nikanix</h3>
+          <p>Tailored AI Agents and Robotic Innovations</p>
 
-            <div>
-                <h3>Nikanix</h3>
-                <p>Tailored AI Agents and Robotic Innovations</p>
-            </div>
-
-            <div>
-                <h3>Solutions</h3>
-                <a href="#">AI Agents</a> |
-                <a href="#">Robotics</a> |
-                <a href="#">Automation Tools</a> |
-                <a href="#">Integration</a>
-            </div>
-
-            <div>
-                <h3>Contact</h3>
-                <p>contact@nikanix.com</p>
-                <p>Munich, Germany</p>
-            </div>
+        <div>
+          <h3>Solutions</h3>
+          <a href="#features">AI Agents</a> | <a href="#features">Robotics</a> |
+          <a href="#features">Automation Tools</a> |
+          <a href="#features">Integration</a>
         </div>
 
-        <div class="footer-bottom">
-            © 2025 Nikanix. Building our foundation in Munich for the future.
+        <div>
+          <h3>Contact</h3>
+          <p><a href="mailto:contact@nikanix.com">contact@nikanix.com</a></p>
+          <p>Munich, Germany</p>
         </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Nikanix. Building our foundation in Munich for the future.
+      </div>
     </footer>
 
     <script>
-        function switchLang(lang) {
-            if (lang === 'de') {
-                window.location.href = "index_de.html";
-            } else {
-                window.location.href = "index.html";
-            }
+      function switchLang(lang) {
+        if (lang === "de") {
+          window.location.href = "index_de.html";
+        } else {
+          window.location.href = "index.html";
         }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
