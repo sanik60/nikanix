@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nikanix entwickelt maßgeschneiderte KI-Agenten, intelligente Automatisierung und robotische Lösungen – mit Fokus auf Datenschutz, Effizienz und reale Anwendungen."
+    />
+    <meta
+      name="keywords"
+      content="KI-Agenten, individuelle KI, Automatisierung, Robotik, Azure AI, RAG, München KI Unternehmen"
+    />
+    <title>Nikanix | Maßgeschneiderte KI-Agenten & Robotik-Innovationen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikanix</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header-left">
-            <img src="nikanix_logo.png" class="logo" alt="Nikanix Logo">
-            <span class="brand">NIKANIX</span>
-        </div>
+      <div class="header-left">
+        <img src="nikanix_logo.png" class="logo" alt="Nikanix Logo" />
+        <span class="brand">NIKANIX</span>
+      </div>
 
-        <div class="lang-switch">
-            <span onclick="switchLang('en')">EN</span>
-            <span class="active" onclick="switchLang('de')">DE</span>
-        </div>
+      <div class="lang-switch">
+        <span onclick="switchLang('en')">EN</span>
+        <span class="active" onclick="switchLang('de')">DE</span>
+      </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-        <h1>Individuelle KI-Agenten und Robotik-Innovationen</h1>
-        <p>
-            Bei Nikanix entwickeln wir maßgeschneiderte KI-Agenten, Automatisierungs­systeme
-            und intelligente Lösungen – exakt abgestimmt auf Ihre realen Anforderungen.
-        </p>
-        <button class="cta-btn">Unsere Lösungen entdecken</button>
+      <h1>Individuelle KI-Agenten und Robotik-Innovationen</h1>
+      <p>
+        Bei Nikanix entwickeln wir maßgeschneiderte KI-Agenten,
+        Automatisierungssysteme und intelligente Lösungen – exakt abgestimmt auf
+        Ihre realen Anforderungen.
+      </p>
+      <button
+        class="cta-btn"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})"
+      >
+        Unsere Lösungen entdecken
+      </button>
     </section>
 
     <!-- VALUE SECTION -->
-    <section class="privacy-block">
-        <h2>Effizientere Abläufe. Geringere Kosten. Volle Kontrolle.</h2>
-        <p>
-            Unsere Mission ist klar: Sie dabei zu unterstützen, effizienter zu arbeiten,
-            Kosten zu reduzieren, wertvolle Zeit zu sparen und höchste Präzision zu erreichen –
-            während Ihre Daten jederzeit geschützt in Ihrer eigenen Umgebung bleiben.
-            <br><br>
-            Nikanix KI läuft direkt in Ihren Systemen und stellt sicher, dass alle Informationen privat,
-            sicher und ausschließlich unter Ihrer Kontrolle bleiben.
-            <br><br>
-            Auch intern setzen wir KI-Agenten zur Entwicklung unserer Technologien ein – als gelebte
-            Verpflichtung zu echter Innovation und Leistung in der Praxis.
-        </p>
+    <section class="privacy-block" style="animation-delay: 0.3s">
+      <h2>Effizientere Abläufe. Geringere Kosten. Volle Kontrolle.</h2>
+      <p>
+        Unsere Mission ist klar: Sie dabei zu unterstützen, effizienter zu
+        arbeiten, Kosten zu reduzieren, wertvolle Zeit zu sparen und höchste
+        Präzision zu erreichen – während Ihre Daten jederzeit geschützt in Ihrer
+        eigenen Umgebung bleiben.
+        <br /><br />
+        Nikanix KI läuft direkt in Ihren Systemen und stellt sicher, dass alle
+        Informationen privat, sicher und ausschließlich unter Ihrer Kontrolle
+        bleiben.
+        <br /><br />
+        Auch intern setzen wir KI-Agenten zur Entwicklung unserer Technologien
+        ein – als gelebte Verpflichtung zu echter Innovation und Leistung in der
+        Praxis.
+      </p>
     </section>
 
     <!-- FEATURES -->
-    <section class="privacy-block"
-        style="background: linear-gradient(to bottom, #122038, #0e1627); padding-top: 60px; padding-bottom: 60px;">
-        <h2>Mit Nikanix wird Intelligenz zu Ihrem Wettbewerbsvorteil</h2>
-        <p style="max-width: 700px; margin: 20px auto;">
-            ✔️ Maßgeschneiderte KI-Agenten & intelligente Systeme<br>
-            ✔️ KI-basierte Automatisierung für Unternehmen & Privathaushalte<br>
-            ✔️ Intelligente Sensor- und Automationsnetzwerke<br>
-            ✔️ Überwachung & Steuerung in Echtzeit<br>
-            ✔️ KI-Innovation & technische Entwicklung
-        </p>
+    <section
+      id="features"
+      class="privacy-block"
+      style="
+        background: linear-gradient(to bottom, #122038, #0e1627);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        animation-delay: 0.6s;
+      "
+    >
+      <h2>Mit Nikanix wird Intelligenz zu Ihrem Wettbewerbsvorteil</h2>
+      <p style="max-width: 700px; margin: 20px auto">
+        ✔️ Maßgeschneiderte KI-Agenten & intelligente Systeme<br />
+        ✔️ KI-basierte Automatisierung für Unternehmen & Privathaushalte<br />
+        ✔️ Intelligente Sensor- und Automationsnetzwerke<br />
+        ✔️ Überwachung & Steuerung in Echtzeit<br />
+        ✔️ KI-Innovation & technische Entwicklung
+      </p>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-grid">
-
-            <div>
-                <h3>Nikanix</h3>
-                <p>Individuelle KI-Agenten und Robotik-Innovationen</p>
-            </div>
-
-            <div>
-                <h3>Lösungen</h3>
-                <a href="#">KI-Agenten</a> |
-                <a href="#">Robotik</a> |
-                <a href="#">Automatisierungs­tools</a> |
-                <a href="#">Integration</a>
-            </div>
-
-            <div>
-                <h3>Kontakt</h3>
-                <p>contact@nikanix.com</p>
-                <p>München, Deutschland</p>
-            </div>
+    <footer class="footer" style="animation-delay: 0.9s">
+      <div class="footer-grid">
+        <div>
+          <h3>Nikanix</h3>
+          <p>Individuelle KI-Agenten und Robotik-Innovationen</p>
         </div>
 
-        <div class="footer-bottom">
-            © 2025 Nikanix. Mit starken Wurzeln in München – für die Zukunft gebaut.
+        <div>
+          <h3>Lösungen</h3>
+          <a href="#features">KI-Agenten</a> | <a href="#features">Robotik</a> |
+          <a href="#features">Automatisierungs­tools</a> |
+          <a href="#features">Integration</a>
         </div>
+
+        <div>
+          <h3>Kontakt</h3>
+          <p><a href="mailto:contact@nikanix.com">contact@nikanix.com</a></p>
+          <p>München, Deutschland</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Nikanix. Mit starken Wurzeln in München – für die Zukunft gebaut.
+      </div>
     </footer>
 
     <script>
-        function switchLang(lang) {
-            if (lang === 'de') {
-                window.location.href = "index_de.html";
-            } else {
-                window.location.href = "index.html";
-            }
+      function switchLang(lang) {
+        if (lang === "de") {
+          window.location.href = "index_de.html";
+        } else {
+          window.location.href = "index.html";
         }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
